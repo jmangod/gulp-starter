@@ -11,3 +11,26 @@ Run `npm install` to setup project. And don't forget to edit `package.json` cont
 
 * Production
   * `gulp build` This task copies all generated HTML files, concatenates and minifies all generated CSS and JavaScript files from `BUILD_DIR` folder to `DIST_DIR` folder (`dist/`).
+
+### Project Structure
+
+```
+gulp-starter
+  |- app/
+  | |- js/
+  | |- pug/
+  | |- scss/
+  |- build
+  | |- css/
+  | |- js/
+  | |- index.html
+  |- dist
+  | |- css/
+  | |- js/
+  | |- index.html
+  |- node_modules/
+  |- .gitignore
+  |- gulpfile.js
+  |- package.json
+  |- README.md
+```
