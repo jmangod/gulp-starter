@@ -1,6 +1,18 @@
 html
-  head
-    link(rel='stylesheet', href='css/styles.css')
-    title Gulp Project
-  body
-    p Hello Gulp
+    head
+        ='\n'
+        <!--build:css css/styles.min.css -->
+        link(rel='stylesheet', href='css/styles.css')
+        ='\n'
+        <!-- endbuild -->
+
+        ='\n'
+        <!--build:js js/main.min.js -->
+        script(type='text/javascript' src='js/main.js')
+        ='\n'
+        <!-- endbuild -->
+
+        title Gulp Project
+    body
+        p Hello Gulp
+        a(href='javascript:hello()') Click Me
